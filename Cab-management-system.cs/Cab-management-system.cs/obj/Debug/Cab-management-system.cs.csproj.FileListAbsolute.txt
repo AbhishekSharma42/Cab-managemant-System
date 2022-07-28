@@ -1,0 +1,11 @@
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\bin\Debug\Cab-management-system.cs.exe.config
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\bin\Debug\Cab-management-system.cs.exe
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\bin\Debug\Cab-management-system.cs.pdb
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.Properties.Resources.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab-management-system.cs.csproj.GenerateResource.Cache
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab-management-system.cs.exe
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab-management-system.cs.pdb
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab-management-system.cs.csprojResolveAssemblyReference.cache
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.LogInWindow.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.SingUp.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.MainWindow.resources
