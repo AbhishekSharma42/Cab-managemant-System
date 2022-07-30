@@ -34,8 +34,9 @@
             this.MinimizeBtnImg = new System.Windows.Forms.PictureBox();
             this.CloseWin = new System.Windows.Forms.PictureBox();
             this.SideBarPannel = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.LogOutLabel = new System.Windows.Forms.Label();
+            this.LogOutImg = new System.Windows.Forms.PictureBox();
+            this.LogOutBtn = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.AdminBtnLabel = new System.Windows.Forms.Label();
             this.adminBtnImg = new System.Windows.Forms.PictureBox();
@@ -68,7 +69,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtnImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseWin)).BeginInit();
             this.SideBarPannel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutBtn)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adminBtnImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AdminBtn)).BeginInit();
@@ -145,8 +147,9 @@
             // SideBarPannel
             // 
             this.SideBarPannel.BackColor = System.Drawing.Color.Navy;
-            this.SideBarPannel.Controls.Add(this.label7);
-            this.SideBarPannel.Controls.Add(this.pictureBox12);
+            this.SideBarPannel.Controls.Add(this.LogOutLabel);
+            this.SideBarPannel.Controls.Add(this.LogOutImg);
+            this.SideBarPannel.Controls.Add(this.LogOutBtn);
             this.SideBarPannel.Controls.Add(this.panel3);
             this.SideBarPannel.Controls.Add(this.userPannal);
             this.SideBarPannel.Controls.Add(this.panel1);
@@ -159,30 +162,48 @@
             this.SideBarPannel.Size = new System.Drawing.Size(228, 769);
             this.SideBarPannel.TabIndex = 1;
             // 
-            // label7
+            // LogOutLabel
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LogOutLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Navy;
-            this.label7.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(89, 724);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 21);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "LogOut";
+            this.LogOutLabel.AutoSize = true;
+            this.LogOutLabel.BackColor = System.Drawing.Color.Navy;
+            this.LogOutLabel.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogOutLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LogOutLabel.Location = new System.Drawing.Point(91, 730);
+            this.LogOutLabel.Name = "LogOutLabel";
+            this.LogOutLabel.Size = new System.Drawing.Size(56, 21);
+            this.LogOutLabel.TabIndex = 21;
+            this.LogOutLabel.Text = "LogOut";
+            this.LogOutLabel.Click += new System.EventHandler(this.LogOutLabel_Click);
+            this.LogOutLabel.MouseEnter += new System.EventHandler(this.LogOutBtn_MouseEnter);
+            this.LogOutLabel.MouseLeave += new System.EventHandler(this.LogOutBtn_MouseLeave);
             // 
-            // pictureBox12
+            // LogOutImg
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Navy;
-            this.pictureBox12.Image = global::Cab_management_system.cs.Properties.Resources.icons8_home_page_64;
-            this.pictureBox12.Location = new System.Drawing.Point(11, 712);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(50, 43);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 20;
-            this.pictureBox12.TabStop = false;
+            this.LogOutImg.BackColor = System.Drawing.Color.Navy;
+            this.LogOutImg.Image = global::Cab_management_system.cs.Properties.Resources.icons8_logout_64;
+            this.LogOutImg.Location = new System.Drawing.Point(13, 718);
+            this.LogOutImg.Name = "LogOutImg";
+            this.LogOutImg.Size = new System.Drawing.Size(50, 43);
+            this.LogOutImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogOutImg.TabIndex = 20;
+            this.LogOutImg.TabStop = false;
+            this.LogOutImg.Click += new System.EventHandler(this.LogOutImg_Click);
+            this.LogOutImg.MouseEnter += new System.EventHandler(this.LogOutBtn_MouseEnter);
+            this.LogOutImg.MouseLeave += new System.EventHandler(this.LogOutBtn_MouseLeave);
+            // 
+            // LogOutBtn
+            // 
+            this.LogOutBtn.BackColor = System.Drawing.Color.Navy;
+            this.LogOutBtn.Location = new System.Drawing.Point(0, 710);
+            this.LogOutBtn.Name = "LogOutBtn";
+            this.LogOutBtn.Size = new System.Drawing.Size(228, 59);
+            this.LogOutBtn.TabIndex = 25;
+            this.LogOutBtn.TabStop = false;
+            this.LogOutBtn.Click += new System.EventHandler(this.LogOutBtn_Click);
+            this.LogOutBtn.MouseEnter += new System.EventHandler(this.LogOutBtn_MouseEnter);
+            this.LogOutBtn.MouseLeave += new System.EventHandler(this.LogOutBtn_MouseLeave);
             // 
             // panel3
             // 
@@ -216,6 +237,7 @@
             this.AdminBtnLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AdminBtnLabel.AutoSize = true;
+            this.AdminBtnLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AdminBtnLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminBtnLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.AdminBtnLabel.Location = new System.Drawing.Point(78, 294);
@@ -224,11 +246,12 @@
             this.AdminBtnLabel.TabIndex = 38;
             this.AdminBtnLabel.Text = "Admin";
             this.AdminBtnLabel.Click += new System.EventHandler(this.AdminBtnLabel_Click);
-            this.AdminBtnLabel.MouseEnter += new System.EventHandler(this.AdminBtnLabel_MouseEnter);
-            this.AdminBtnLabel.MouseLeave += new System.EventHandler(this.AdminBtnLabel_MouseLeave);
+            this.AdminBtnLabel.MouseEnter += new System.EventHandler(this.AdminBtn_MouseEnter_1);
+            this.AdminBtnLabel.MouseLeave += new System.EventHandler(this.AdminBtn_MouseLeave_1);
             // 
             // adminBtnImg
             // 
+            this.adminBtnImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.adminBtnImg.Image = global::Cab_management_system.cs.Properties.Resources.icons8_admin_settings_male_48;
             this.adminBtnImg.Location = new System.Drawing.Point(7, 282);
             this.adminBtnImg.Name = "adminBtnImg";
@@ -237,25 +260,27 @@
             this.adminBtnImg.TabIndex = 37;
             this.adminBtnImg.TabStop = false;
             this.adminBtnImg.Click += new System.EventHandler(this.adminBtnImg_Click);
-            this.adminBtnImg.MouseEnter += new System.EventHandler(this.adminBtnImg_MouseEnter);
-            this.adminBtnImg.MouseLeave += new System.EventHandler(this.adminBtnImg_MouseLeave);
+            this.adminBtnImg.MouseEnter += new System.EventHandler(this.AdminBtn_MouseEnter_1);
+            this.adminBtnImg.MouseLeave += new System.EventHandler(this.AdminBtn_MouseLeave_1);
             // 
             // AdminBtn
             // 
+            this.AdminBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AdminBtn.Location = new System.Drawing.Point(0, 279);
             this.AdminBtn.Name = "AdminBtn";
             this.AdminBtn.Size = new System.Drawing.Size(228, 50);
             this.AdminBtn.TabIndex = 36;
             this.AdminBtn.TabStop = false;
             this.AdminBtn.Click += new System.EventHandler(this.AdminBtn_Click);
-            this.AdminBtn.MouseEnter += new System.EventHandler(this.AdminBtn_MouseEnter);
-            this.AdminBtn.MouseLeave += new System.EventHandler(this.AdminBtn_MouseLeave);
+            this.AdminBtn.MouseEnter += new System.EventHandler(this.AdminBtn_MouseEnter_1);
+            this.AdminBtn.MouseLeave += new System.EventHandler(this.AdminBtn_MouseLeave_1);
             // 
             // AboutLabel
             // 
             this.AboutLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AboutLabel.AutoSize = true;
+            this.AboutLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.AboutLabel.Location = new System.Drawing.Point(76, 239);
@@ -263,11 +288,13 @@
             this.AboutLabel.Size = new System.Drawing.Size(95, 24);
             this.AboutLabel.TabIndex = 35;
             this.AboutLabel.Text = "About us";
-            this.AboutLabel.MouseEnter += new System.EventHandler(this.AboutLabel_MouseEnter);
-            this.AboutLabel.MouseLeave += new System.EventHandler(this.AboutLabel_MouseLeave);
+            this.AboutLabel.Click += new System.EventHandler(this.AboutLabel_Click);
+            this.AboutLabel.MouseEnter += new System.EventHandler(this.AboutBtn_MouseEnter_1);
+            this.AboutLabel.MouseLeave += new System.EventHandler(this.AboutBtn_MouseLeave_1);
             // 
             // AboutImg
             // 
+            this.AboutImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutImg.Image = global::Cab_management_system.cs.Properties.Resources.icons8_info_240;
             this.AboutImg.Location = new System.Drawing.Point(7, 227);
             this.AboutImg.Name = "AboutImg";
@@ -275,24 +302,28 @@
             this.AboutImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AboutImg.TabIndex = 34;
             this.AboutImg.TabStop = false;
-            this.AboutImg.MouseEnter += new System.EventHandler(this.AboutImg_MouseEnter);
-            this.AboutImg.MouseLeave += new System.EventHandler(this.AboutImg_MouseLeave);
+            this.AboutImg.Click += new System.EventHandler(this.AboutImg_Click);
+            this.AboutImg.MouseEnter += new System.EventHandler(this.AboutBtn_MouseEnter_1);
+            this.AboutImg.MouseLeave += new System.EventHandler(this.AboutBtn_MouseLeave_1);
             // 
             // AboutBtn
             // 
+            this.AboutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutBtn.Location = new System.Drawing.Point(0, 224);
             this.AboutBtn.Name = "AboutBtn";
             this.AboutBtn.Size = new System.Drawing.Size(228, 50);
             this.AboutBtn.TabIndex = 33;
             this.AboutBtn.TabStop = false;
-            this.AboutBtn.MouseEnter += new System.EventHandler(this.AboutBtn_MouseEnter);
-            this.AboutBtn.MouseLeave += new System.EventHandler(this.AboutBtn_MouseLeave);
+            this.AboutBtn.Click += new System.EventHandler(this.AboutBtn_Click);
+            this.AboutBtn.MouseEnter += new System.EventHandler(this.AboutBtn_MouseEnter_1);
+            this.AboutBtn.MouseLeave += new System.EventHandler(this.AboutBtn_MouseLeave_1);
             // 
             // ContectLabel
             // 
             this.ContectLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ContectLabel.AutoSize = true;
+            this.ContectLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ContectLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContectLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.ContectLabel.Location = new System.Drawing.Point(76, 183);
@@ -301,11 +332,12 @@
             this.ContectLabel.TabIndex = 32;
             this.ContectLabel.Text = "Contect us";
             this.ContectLabel.Click += new System.EventHandler(this.ContectLabel_Click);
-            this.ContectLabel.MouseEnter += new System.EventHandler(this.ContectLabel_MouseEnter);
-            this.ContectLabel.MouseLeave += new System.EventHandler(this.ContectLabel_MouseLeave);
+            this.ContectLabel.MouseEnter += new System.EventHandler(this.ContectBtn_MouseEnter_1);
+            this.ContectLabel.MouseLeave += new System.EventHandler(this.ContectBtn_MouseLeave_1);
             // 
             // ContectImg
             // 
+            this.ContectImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ContectImg.Image = global::Cab_management_system.cs.Properties.Resources.icons8_connect_240;
             this.ContectImg.Location = new System.Drawing.Point(6, 173);
             this.ContectImg.Name = "ContectImg";
@@ -314,25 +346,27 @@
             this.ContectImg.TabIndex = 31;
             this.ContectImg.TabStop = false;
             this.ContectImg.Click += new System.EventHandler(this.ContectImg_Click);
-            this.ContectImg.MouseEnter += new System.EventHandler(this.ContectImg_MouseEnter);
-            this.ContectImg.MouseLeave += new System.EventHandler(this.ContectImg_MouseLeave);
+            this.ContectImg.MouseEnter += new System.EventHandler(this.ContectBtn_MouseEnter_1);
+            this.ContectImg.MouseLeave += new System.EventHandler(this.ContectBtn_MouseLeave_1);
             // 
             // ContectBtn
             // 
+            this.ContectBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ContectBtn.Location = new System.Drawing.Point(0, 170);
             this.ContectBtn.Name = "ContectBtn";
             this.ContectBtn.Size = new System.Drawing.Size(228, 50);
             this.ContectBtn.TabIndex = 30;
             this.ContectBtn.TabStop = false;
             this.ContectBtn.Click += new System.EventHandler(this.ContectBtn_Click);
-            this.ContectBtn.MouseEnter += new System.EventHandler(this.ContectBtn_MouseEnter);
-            this.ContectBtn.MouseLeave += new System.EventHandler(this.ContectBtn_MouseLeave);
+            this.ContectBtn.MouseEnter += new System.EventHandler(this.ContectBtn_MouseEnter_1);
+            this.ContectBtn.MouseLeave += new System.EventHandler(this.ContectBtn_MouseLeave_1);
             // 
             // myBookingLabel
             // 
             this.myBookingLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.myBookingLabel.AutoSize = true;
+            this.myBookingLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.myBookingLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myBookingLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.myBookingLabel.Location = new System.Drawing.Point(75, 128);
@@ -341,11 +375,12 @@
             this.myBookingLabel.TabIndex = 29;
             this.myBookingLabel.Text = "My Booking";
             this.myBookingLabel.Click += new System.EventHandler(this.myBookingLabel_Click);
-            this.myBookingLabel.MouseEnter += new System.EventHandler(this.myBookingLabel_MouseEnter);
-            this.myBookingLabel.MouseLeave += new System.EventHandler(this.myBookingLabel_MouseLeave);
+            this.myBookingLabel.MouseEnter += new System.EventHandler(this.myBookingBtn_MouseEnter);
+            this.myBookingLabel.MouseLeave += new System.EventHandler(this.myBookingBtn_MouseLeave);
             // 
             // myBookingImg
             // 
+            this.myBookingImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.myBookingImg.Image = global::Cab_management_system.cs.Properties.Resources.icons8_taxi_96;
             this.myBookingImg.Location = new System.Drawing.Point(9, 120);
             this.myBookingImg.Name = "myBookingImg";
@@ -354,11 +389,12 @@
             this.myBookingImg.TabIndex = 28;
             this.myBookingImg.TabStop = false;
             this.myBookingImg.Click += new System.EventHandler(this.myBookingImg_Click);
-            this.myBookingImg.MouseEnter += new System.EventHandler(this.myBookingImg_MouseEnter);
-            this.myBookingImg.MouseLeave += new System.EventHandler(this.myBookingImg_MouseLeave);
+            this.myBookingImg.MouseEnter += new System.EventHandler(this.myBookingBtn_MouseEnter);
+            this.myBookingImg.MouseLeave += new System.EventHandler(this.myBookingBtn_MouseLeave);
             // 
             // myBookingBtn
             // 
+            this.myBookingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.myBookingBtn.Location = new System.Drawing.Point(0, 115);
             this.myBookingBtn.Name = "myBookingBtn";
             this.myBookingBtn.Size = new System.Drawing.Size(228, 50);
@@ -373,6 +409,7 @@
             this.CabBookingLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CabBookingLabel.AutoSize = true;
+            this.CabBookingLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CabBookingLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabBookingLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.CabBookingLabel.Location = new System.Drawing.Point(76, 72);
@@ -381,11 +418,12 @@
             this.CabBookingLabel.TabIndex = 26;
             this.CabBookingLabel.Text = "Cab Booking";
             this.CabBookingLabel.Click += new System.EventHandler(this.CabBookingLabel_Click);
-            this.CabBookingLabel.MouseEnter += new System.EventHandler(this.CabBookingLabel_MouseEnter);
-            this.CabBookingLabel.MouseLeave += new System.EventHandler(this.CabBookingLabel_MouseLeave);
+            this.CabBookingLabel.MouseEnter += new System.EventHandler(this.CabbookingBtn_MouseEnter);
+            this.CabBookingLabel.MouseLeave += new System.EventHandler(this.CabbookingBtn_MouseLeave);
             // 
             // cabBookingImg
             // 
+            this.cabBookingImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cabBookingImg.Image = global::Cab_management_system.cs.Properties.Resources.icons8_taxi_96__1_;
             this.cabBookingImg.Location = new System.Drawing.Point(6, 62);
             this.cabBookingImg.Name = "cabBookingImg";
@@ -394,11 +432,12 @@
             this.cabBookingImg.TabIndex = 25;
             this.cabBookingImg.TabStop = false;
             this.cabBookingImg.Click += new System.EventHandler(this.cabBookingImg_Click);
-            this.cabBookingImg.MouseEnter += new System.EventHandler(this.cabBookingImg_MouseEnter);
-            this.cabBookingImg.MouseLeave += new System.EventHandler(this.cabBookingImg_MouseLeave);
+            this.cabBookingImg.MouseEnter += new System.EventHandler(this.CabbookingBtn_MouseEnter);
+            this.cabBookingImg.MouseLeave += new System.EventHandler(this.CabbookingBtn_MouseLeave);
             // 
             // CabbookingBtn
             // 
+            this.CabbookingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CabbookingBtn.Location = new System.Drawing.Point(0, 59);
             this.CabbookingBtn.Name = "CabbookingBtn";
             this.CabbookingBtn.Size = new System.Drawing.Size(228, 50);
@@ -413,6 +452,7 @@
             this.HomeBtnlabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HomeBtnlabel.AutoSize = true;
+            this.HomeBtnlabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomeBtnlabel.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtnlabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.HomeBtnlabel.Location = new System.Drawing.Point(76, 13);
@@ -421,11 +461,12 @@
             this.HomeBtnlabel.TabIndex = 23;
             this.HomeBtnlabel.Text = "Home";
             this.HomeBtnlabel.Click += new System.EventHandler(this.HomeBtnlabel_Click);
-            this.HomeBtnlabel.MouseEnter += new System.EventHandler(this.HomeBtnlabel_MouseEnter);
-            this.HomeBtnlabel.MouseLeave += new System.EventHandler(this.HomeBtnlabel_MouseLeave);
+            this.HomeBtnlabel.MouseEnter += new System.EventHandler(this.HomeBtn_MouseEnter);
+            this.HomeBtnlabel.MouseLeave += new System.EventHandler(this.HomeBtn_MouseLeave);
             // 
             // HomeBtnIcon
             // 
+            this.HomeBtnIcon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomeBtnIcon.Image = global::Cab_management_system.cs.Properties.Resources.icons8_home_page_64;
             this.HomeBtnIcon.Location = new System.Drawing.Point(6, 7);
             this.HomeBtnIcon.Name = "HomeBtnIcon";
@@ -434,11 +475,12 @@
             this.HomeBtnIcon.TabIndex = 22;
             this.HomeBtnIcon.TabStop = false;
             this.HomeBtnIcon.Click += new System.EventHandler(this.HomeBtnIcon_Click);
-            this.HomeBtnIcon.MouseEnter += new System.EventHandler(this.HomeBtnIcon_MouseEnter);
-            this.HomeBtnIcon.MouseLeave += new System.EventHandler(this.HomeBtnIcon_MouseLeave);
+            this.HomeBtnIcon.MouseEnter += new System.EventHandler(this.HomeBtn_MouseEnter);
+            this.HomeBtnIcon.MouseLeave += new System.EventHandler(this.HomeBtn_MouseLeave);
             // 
             // HomeBtn
             // 
+            this.HomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomeBtn.Location = new System.Drawing.Point(0, 3);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(228, 50);
@@ -511,7 +553,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox13.Location = new System.Drawing.Point(0, 7883);
+            this.pictureBox13.Location = new System.Drawing.Point(0, 10955);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(228, 44);
             this.pictureBox13.TabIndex = 19;
@@ -545,7 +587,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.CloseWin)).EndInit();
             this.SideBarPannel.ResumeLayout(false);
             this.SideBarPannel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogOutBtn)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adminBtnImg)).EndInit();
@@ -579,8 +622,8 @@
         private System.Windows.Forms.PictureBox SideBarBtnimg;
         private System.Windows.Forms.Timer SidebarTimer;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label LogOutLabel;
+        private System.Windows.Forms.PictureBox LogOutImg;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label HomeBtnlabel;
@@ -605,6 +648,7 @@
         private System.Windows.Forms.Label AdminBtnLabel;
         private System.Windows.Forms.PictureBox adminBtnImg;
         private System.Windows.Forms.PictureBox AdminBtn;
+        private System.Windows.Forms.PictureBox LogOutBtn;
 
     }
 }

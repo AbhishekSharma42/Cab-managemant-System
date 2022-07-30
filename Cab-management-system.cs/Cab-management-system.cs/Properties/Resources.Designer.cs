@@ -123,6 +123,16 @@ namespace Cab_management_system.cs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_menu_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-menu-48", resourceCulture);
@@ -176,6 +186,16 @@ namespace Cab_management_system.cs.Properties {
         internal static System.Drawing.Bitmap pngegg__11_ {
             get {
                 object obj = ResourceManager.GetObject("pngegg (11)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg__12_ {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (12)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

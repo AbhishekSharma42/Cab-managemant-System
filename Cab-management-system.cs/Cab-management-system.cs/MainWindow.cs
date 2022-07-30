@@ -122,41 +122,13 @@ namespace Cab_management_system.cs
             HomeBtnlabel.BackColor = Color.Red;
             HomeBtnIcon.BackColor = Color.Red;
         }
+
         private void HomeBtn_MouseLeave(object sender, EventArgs e)
         {
             HomeBtn.BackColor = Color.Navy;
             HomeBtnlabel.BackColor = Color.Navy;
             HomeBtnIcon.BackColor = Color.Navy;
         }
-
-        private void HomeBtnlabel_MouseEnter(object sender, EventArgs e)
-        {
-            HomeBtn.BackColor = Color.Red;
-            HomeBtnlabel.BackColor = Color.Red;
-            HomeBtnIcon.BackColor = Color.Red;
-        }
-
-        private void HomeBtnlabel_MouseLeave(object sender, EventArgs e)
-        {
-            HomeBtn.BackColor = Color.Navy;
-            HomeBtnlabel.BackColor = Color.Navy;
-            HomeBtnIcon.BackColor = Color.Navy;
-        }
-
-        private void HomeBtnIcon_MouseEnter(object sender, EventArgs e)
-        {
-            HomeBtn.BackColor = Color.Red;
-            HomeBtnlabel.BackColor = Color.Red;
-            HomeBtnIcon.BackColor = Color.Red;
-        }
-
-        private void HomeBtnIcon_MouseLeave(object sender, EventArgs e)
-        {
-            HomeBtn.BackColor = Color.Navy;
-            HomeBtnlabel.BackColor = Color.Navy;
-            HomeBtnIcon.BackColor = Color.Navy;
-        }
-
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
@@ -192,35 +164,6 @@ namespace Cab_management_system.cs
             CabBookingLabel.BackColor = Color.Navy;
         }
 
-        private void CabBookingLabel_MouseEnter(object sender, EventArgs e)
-        {
-            CabbookingBtn.BackColor = Color.Red;
-            cabBookingImg.BackColor = Color.Red;
-            CabBookingLabel.BackColor = Color.Red;
-        }
-
-        private void CabBookingLabel_MouseLeave(object sender, EventArgs e)
-        {
-            CabbookingBtn.BackColor = Color.Navy;
-            cabBookingImg.BackColor = Color.Navy;
-            CabBookingLabel.BackColor = Color.Navy;
-        }
-
-        private void cabBookingImg_MouseEnter(object sender, EventArgs e)
-        {
-            CabbookingBtn.BackColor = Color.Red;
-            cabBookingImg.BackColor = Color.Red;
-            CabBookingLabel.BackColor = Color.Red;
-        }
-
-        private void cabBookingImg_MouseLeave(object sender, EventArgs e)
-        {
-            CabbookingBtn.BackColor = Color.Navy;
-            cabBookingImg.BackColor = Color.Navy;
-            CabBookingLabel.BackColor = Color.Navy;
-        }
-
-
         private void CabbookingBtn_Click(object sender, EventArgs e)
         {
             CabBooking cabBooking = new CabBooking();
@@ -238,7 +181,6 @@ namespace Cab_management_system.cs
         }
         //############################################################################
         //############################################################################
-
         private void myBookingBtn_MouseEnter(object sender, EventArgs e)
         {
             myBookingBtn.BackColor = Color.Red;
@@ -252,35 +194,6 @@ namespace Cab_management_system.cs
             myBookingImg.BackColor = Color.Navy;
             myBookingLabel.BackColor = Color.Navy;
         }
-
-        private void myBookingLabel_MouseEnter(object sender, EventArgs e)
-        {
-            myBookingBtn.BackColor = Color.Red;
-            myBookingImg.BackColor = Color.Red;
-            myBookingLabel.BackColor = Color.Red;
-        }
-
-        private void myBookingLabel_MouseLeave(object sender, EventArgs e)
-        {
-            myBookingBtn.BackColor = Color.Navy;
-            myBookingImg.BackColor = Color.Navy;
-            myBookingLabel.BackColor = Color.Navy;
-        }
-
-        private void myBookingImg_MouseEnter(object sender, EventArgs e)
-        {
-            myBookingBtn.BackColor = Color.Red;
-            myBookingImg.BackColor = Color.Red;
-            myBookingLabel.BackColor = Color.Red;
-        }
-
-        private void myBookingImg_MouseLeave(object sender, EventArgs e)
-        {
-            myBookingBtn.BackColor = Color.Navy;
-            myBookingImg.BackColor = Color.Navy;
-            myBookingLabel.BackColor = Color.Navy;
-        }
-
 
         private void myBookingBtn_Click(object sender, EventArgs e)
         {
@@ -302,49 +215,21 @@ namespace Cab_management_system.cs
 
         //############################################################################
         //############################################################################
-        private void ContectBtn_MouseEnter(object sender, EventArgs e)
+
+        private void ContectBtn_MouseEnter_1(object sender, EventArgs e)
         {
             ContectBtn.BackColor = Color.Red;
             ContectImg.BackColor = Color.Red;
             ContectLabel.BackColor = Color.Red;
         }
 
-        private void ContectBtn_MouseLeave(object sender, EventArgs e)
+        private void ContectBtn_MouseLeave_1(object sender, EventArgs e)
         {
             ContectBtn.BackColor = Color.Navy;
             ContectImg.BackColor = Color.Navy;
             ContectLabel.BackColor = Color.Navy;
         }
-
-        private void ContectLabel_MouseEnter(object sender, EventArgs e)
-        {
-            ContectBtn.BackColor = Color.Red;
-            ContectImg.BackColor = Color.Red;
-            ContectLabel.BackColor = Color.Red;
-        }
-
-        private void ContectLabel_MouseLeave(object sender, EventArgs e)
-        {
-            ContectBtn.BackColor = Color.Navy;
-            ContectImg.BackColor = Color.Navy;
-            ContectLabel.BackColor = Color.Navy;
-        }
-
-        private void ContectImg_MouseEnter(object sender, EventArgs e)
-        {
-            ContectBtn.BackColor = Color.Red;
-            ContectImg.BackColor = Color.Red;
-            ContectLabel.BackColor = Color.Red;
-        }
-
-        private void ContectImg_MouseLeave(object sender, EventArgs e)
-        {
-            ContectBtn.BackColor = Color.Navy;
-            ContectImg.BackColor = Color.Navy;
-            ContectLabel.BackColor = Color.Navy;
-        }
-
-
+        
         private void ContectBtn_Click(object sender, EventArgs e)
         {
             ContectUsPg ContectUs = new ContectUsPg();
@@ -365,100 +250,55 @@ namespace Cab_management_system.cs
 
         //############################################################################
         //############################################################################
-
-        private void AboutBtn_MouseEnter(object sender, EventArgs e)
+        private void AboutBtn_MouseEnter_1(object sender, EventArgs e)
         {
             AboutBtn.BackColor = Color.Red;
             AboutImg.BackColor = Color.Red;
             AboutLabel.BackColor = Color.Red;
         }
 
-        private void AboutBtn_MouseLeave(object sender, EventArgs e)
+        private void AboutBtn_MouseLeave_1(object sender, EventArgs e)
         {
             AboutBtn.BackColor = Color.Navy;
             AboutImg.BackColor = Color.Navy;
             AboutLabel.BackColor = Color.Navy;
         }
 
-        private void AboutLabel_MouseEnter(object sender, EventArgs e)
+        private void AboutBtn_Click(object sender, EventArgs e)
         {
-            AboutBtn.BackColor = Color.Red;
-            AboutImg.BackColor = Color.Red;
-            AboutLabel.BackColor = Color.Red;
+            AboutUsPg Aboutus = new AboutUsPg();
+            addUserControl(Aboutus);
         }
 
-        private void AboutLabel_MouseLeave(object sender, EventArgs e)
+        private void AboutImg_Click(object sender, EventArgs e)
         {
-            AboutBtn.BackColor = Color.Navy;
-            AboutImg.BackColor = Color.Navy;
-            AboutLabel.BackColor = Color.Navy;
+            AboutUsPg Aboutus = new AboutUsPg();
+            addUserControl(Aboutus);
         }
 
-        private void AboutImg_MouseEnter(object sender, EventArgs e)
+        private void AboutLabel_Click(object sender, EventArgs e)
         {
-            AboutBtn.BackColor = Color.Red;
-            AboutImg.BackColor = Color.Red;
-            AboutLabel.BackColor = Color.Red;
+            AboutUsPg Aboutus = new AboutUsPg();
+            addUserControl(Aboutus);
         }
-
-        private void AboutImg_MouseLeave(object sender, EventArgs e)
-        {
-            AboutBtn.BackColor = Color.Navy;
-            AboutImg.BackColor = Color.Navy;
-            AboutLabel.BackColor = Color.Navy;
-        }
-
         //############################################################################
         //############################################################################
-        private void AdminBtn_MouseEnter(object sender, EventArgs e)
+
+        private void AdminBtn_MouseEnter_1(object sender, EventArgs e)
         {
             AdminBtn.BackColor = Color.Red;
             adminBtnImg.BackColor = Color.Red;
             AdminBtnLabel.BackColor = Color.Red;
         }
 
-        private void AdminBtn_MouseLeave(object sender, EventArgs e)
+        private void AdminBtn_MouseLeave_1(object sender, EventArgs e)
         {
             AdminBtn.BackColor = Color.Navy;
             adminBtnImg.BackColor = Color.Navy;
             AdminBtnLabel.BackColor = Color.Navy;
         }
 
-        private void AdminBtnLabel_MouseEnter(object sender, EventArgs e)
-        {
-            AdminBtn.BackColor = Color.Red;
-            adminBtnImg.BackColor = Color.Red;
-            AdminBtnLabel.BackColor = Color.Red;
-        }
-
-        private void AdminBtnLabel_MouseLeave(object sender, EventArgs e)
-        {
-            AdminBtn.BackColor = Color.Navy;
-            adminBtnImg.BackColor = Color.Navy;
-            AdminBtnLabel.BackColor = Color.Navy;
-        }
-
-        private void adminBtnImg_MouseEnter(object sender, EventArgs e)
-        {
-            AdminBtn.BackColor = Color.Red;
-            adminBtnImg.BackColor = Color.Red;
-            AdminBtnLabel.BackColor = Color.Red;
-        }
-
-        private void adminBtnImg_MouseLeave(object sender, EventArgs e)
-        {
-            AdminBtn.BackColor = Color.Navy;
-            adminBtnImg.BackColor = Color.Navy;
-            AdminBtnLabel.BackColor = Color.Navy;
-        }
-
-
-        private void AdminBtn_Click(object sender, EventArgs e)
-        {
-            DeshBoard DeshBoard = new DeshBoard();
-            addUserControl(DeshBoard);
-        }
-
+        
         private void AdminBtnLabel_Click(object sender, EventArgs e)
         {
             DeshBoard DeshBoard = new DeshBoard();
@@ -471,6 +311,56 @@ namespace Cab_management_system.cs
             addUserControl(DeshBoard);
         }
 
+        private void AdminBtn_Click(object sender, EventArgs e)
+        {
+            DeshBoard DeshBoard = new DeshBoard();
+            addUserControl(DeshBoard);
+        }
+        
+        //###############################################################
+        //###############################################################
+        //   Log Out Methods
+        //###############################################################
+
+        private void LogOutBtn_MouseEnter(object sender, EventArgs e)
+        {
+            LogOutBtn.BackColor = Color.Red;
+            LogOutImg.BackColor = Color.Red;
+            LogOutLabel.BackColor = Color.Red;
+        }
+
+        private void LogOutBtn_MouseLeave(object sender, EventArgs e)
+        {
+            LogOutBtn.BackColor = Color.Navy;
+            LogOutImg.BackColor = Color.Navy;
+            LogOutLabel.BackColor = Color.Navy;
+        }
+
+        private void LogOutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LogInWindow().Show();
+        }
+
+        private void LogOutImg_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LogInWindow().Show();
+        }
+
+        private void LogOutLabel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LogInWindow().Show();
+        }
+
+       
+
+       
+       
+
+
+       
         //############################################################################
     }
 

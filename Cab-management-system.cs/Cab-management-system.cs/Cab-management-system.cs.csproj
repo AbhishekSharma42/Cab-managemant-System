@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUsPg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutUsPg.Designer.cs">
+      <DependentUpon>AboutUsPg.cs</DependentUpon>
+    </Compile>
     <Compile Include="CabBooking.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     <Compile Include="SingUp.Designer.cs">
       <DependentUpon>SingUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutUsPg.resx">
+      <DependentUpon>AboutUsPg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CabBooking.resx">
       <DependentUpon>CabBooking.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +182,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon1.ico" />
+    <None Include="Resources\icons8-logout-64.png" />
+    <None Include="Resources\pngegg %2812%29.png" />
     <None Include="Resources\icons8-admin-settings-male-48.png" />
     <None Include="Resources\icons8-info-240.png" />
     <None Include="Resources\icons8-connect-240.png" />

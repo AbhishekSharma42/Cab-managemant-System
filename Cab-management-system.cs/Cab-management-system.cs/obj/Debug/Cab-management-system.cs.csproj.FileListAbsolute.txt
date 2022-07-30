@@ -14,3 +14,4 @@ D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_ma
 D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.CabBooking.resources
 D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.myBookingPg.resources
 D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.ContectUsPg.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.AboutUsPg.resources
