@@ -73,9 +73,59 @@ namespace Cab_management_system.cs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_admin_settings_male_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-admin-settings-male-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_close_60 {
             get {
                 object obj = ResourceManager.GetObject("icons8-close-60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_connect_240 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-connect-240", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_home_page_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-home-page-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_info_240 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-info-240", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_menu_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-menu-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +146,36 @@ namespace Cab_management_system.cs.Properties {
         internal static System.Drawing.Bitmap icons8_subtract_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-subtract-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_taxi_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-taxi-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_taxi_96__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-taxi-96 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg__11_ {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (11)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

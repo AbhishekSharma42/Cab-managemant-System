@@ -9,3 +9,8 @@ D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab-ma
 D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.LogInWindow.resources
 D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.SingUp.resources
 D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.MainWindow.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.homePage.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.DeshBoard.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.CabBooking.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.myBookingPg.resources
+D:\clgproject\Cab-management-system.cs\Cab-management-system.cs\obj\Debug\Cab_management_system.cs.ContectUsPg.resources

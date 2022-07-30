@@ -44,17 +44,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CabBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CabBooking.Designer.cs">
+      <DependentUpon>CabBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContectUsPg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContectUsPg.Designer.cs">
+      <DependentUpon>ContectUsPg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeshBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeshBoard.Designer.cs">
+      <DependentUpon>DeshBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="homePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="homePage.Designer.cs">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myBookingPg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="myBookingPg.Designer.cs">
+      <DependentUpon>myBookingPg.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,11 +94,26 @@
     <Compile Include="SingUp.Designer.cs">
       <DependentUpon>SingUp.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CabBooking.resx">
+      <DependentUpon>CabBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContectUsPg.resx">
+      <DependentUpon>ContectUsPg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeshBoard.resx">
+      <DependentUpon>DeshBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="homePage.resx">
+      <DependentUpon>homePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myBookingPg.resx">
+      <DependentUpon>myBookingPg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +161,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-subtract-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon1.ico" />
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+    <None Include="Resources\icons8-info-240.png" />
+    <None Include="Resources\icons8-connect-240.png" />
+    <None Include="Resources\icons8-taxi-96.png" />
+    <None Include="Resources\icons8-taxi-96 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
