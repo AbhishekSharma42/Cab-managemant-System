@@ -124,6 +124,12 @@ namespace Cab_management_system.cs
             this.Hide();
         }
 
+        private void feildClearLabel_Click(object sender, EventArgs e)
+        {
+            UserIdBox.Clear();
+            PassWordBox.Clear();
+        }
+
 
     }
 }

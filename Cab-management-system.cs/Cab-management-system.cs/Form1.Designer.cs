@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.mainPnnel = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.forgetPassLable = new System.Windows.Forms.Label();
             this.registerLabel = new System.Windows.Forms.Label();
             this.feildClearLabel = new System.Windows.Forms.Label();
@@ -57,7 +56,6 @@
             // mainPnnel
             // 
             this.mainPnnel.BackColor = System.Drawing.Color.White;
-            this.mainPnnel.Controls.Add(this.label6);
             this.mainPnnel.Controls.Add(this.forgetPassLable);
             this.mainPnnel.Controls.Add(this.registerLabel);
             this.mainPnnel.Controls.Add(this.feildClearLabel);
@@ -77,15 +75,6 @@
             this.mainPnnel.Name = "mainPnnel";
             this.mainPnnel.Size = new System.Drawing.Size(358, 433);
             this.mainPnnel.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(301, 58);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 17);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "skip";
             // 
             // forgetPassLable
             // 
@@ -121,6 +110,7 @@
             this.feildClearLabel.Size = new System.Drawing.Size(88, 19);
             this.feildClearLabel.TabIndex = 27;
             this.feildClearLabel.Text = "Clear Feild";
+            this.feildClearLabel.Click += new System.EventHandler(this.feildClearLabel_Click);
             this.feildClearLabel.MouseEnter += new System.EventHandler(this.feildClearLabel_MouseEnter);
             this.feildClearLabel.MouseLeave += new System.EventHandler(this.feildClearLabel_MouseLeave);
             // 
@@ -213,7 +203,7 @@
             this.LoginLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LoginLabel.AutoSize = true;
             this.LoginLabel.Font = new System.Drawing.Font("Buxton Sketch", 18.8F, System.Drawing.FontStyle.Bold);
-            this.LoginLabel.Location = new System.Drawing.Point(133, 78);
+            this.LoginLabel.Location = new System.Drawing.Point(138, 64);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(83, 39);
             this.LoginLabel.TabIndex = 18;
@@ -264,7 +254,6 @@
         #endregion
 
         private System.Windows.Forms.Panel mainPnnel;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label forgetPassLable;
         private System.Windows.Forms.Label registerLabel;
         private System.Windows.Forms.Label feildClearLabel;

@@ -15,10 +15,10 @@ namespace Cab_management_system.cs
         public MainWindow()
         {
             InitializeComponent();
+            
             homePage Homepage = new homePage();
             addUserControl(Homepage);
         }
-
         //######################################################################
         //######################################################################
         //                  title bar Drage and drop

@@ -16,5 +16,10 @@ namespace Cab_management_system.cs
         {
             InitializeComponent();
         }
+
+        private void homePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

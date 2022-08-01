@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.TitlebarPnnel = new System.Windows.Forms.Panel();
             this.SideBarBtnimg = new System.Windows.Forms.PictureBox();
             this.MinimizeBtnImg = new System.Windows.Forms.PictureBox();
@@ -63,7 +62,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.mainControllPannl = new System.Windows.Forms.Panel();
-            this.SidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.TitlebarPnnel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SideBarBtnimg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtnImg)).BeginInit();
@@ -240,7 +238,7 @@
             this.AdminBtnLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AdminBtnLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminBtnLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AdminBtnLabel.Location = new System.Drawing.Point(78, 294);
+            this.AdminBtnLabel.Location = new System.Drawing.Point(78, 293);
             this.AdminBtnLabel.Name = "AdminBtnLabel";
             this.AdminBtnLabel.Size = new System.Drawing.Size(69, 24);
             this.AdminBtnLabel.TabIndex = 38;
@@ -283,7 +281,7 @@
             this.AboutLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.AboutLabel.Location = new System.Drawing.Point(76, 239);
+            this.AboutLabel.Location = new System.Drawing.Point(76, 236);
             this.AboutLabel.Name = "AboutLabel";
             this.AboutLabel.Size = new System.Drawing.Size(95, 24);
             this.AboutLabel.TabIndex = 35;
@@ -412,7 +410,7 @@
             this.CabBookingLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CabBookingLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CabBookingLabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.CabBookingLabel.Location = new System.Drawing.Point(76, 72);
+            this.CabBookingLabel.Location = new System.Drawing.Point(75, 72);
             this.CabBookingLabel.Name = "CabBookingLabel";
             this.CabBookingLabel.Size = new System.Drawing.Size(131, 24);
             this.CabBookingLabel.TabIndex = 26;
@@ -455,7 +453,7 @@
             this.HomeBtnlabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomeBtnlabel.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeBtnlabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.HomeBtnlabel.Location = new System.Drawing.Point(76, 13);
+            this.HomeBtnlabel.Location = new System.Drawing.Point(76, 12);
             this.HomeBtnlabel.Name = "HomeBtnlabel";
             this.HomeBtnlabel.Size = new System.Drawing.Size(66, 29);
             this.HomeBtnlabel.TabIndex = 23;
@@ -553,7 +551,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox13.Location = new System.Drawing.Point(0, 10955);
+            this.pictureBox13.Location = new System.Drawing.Point(0, 11339);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(228, 44);
             this.pictureBox13.TabIndex = 19;
@@ -620,7 +618,6 @@
         private System.Windows.Forms.PictureBox MinimizeBtnImg;
         private System.Windows.Forms.PictureBox CloseWin;
         private System.Windows.Forms.PictureBox SideBarBtnimg;
-        private System.Windows.Forms.Timer SidebarTimer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LogOutLabel;
         private System.Windows.Forms.PictureBox LogOutImg;

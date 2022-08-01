@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.mainPnnel = new System.Windows.Forms.Panel();
+            this.LostPass = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.ConformPassBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.ConformPass = new System.Windows.Forms.TextBox();
             this.forgetPassLable = new System.Windows.Forms.Label();
             this.AlreadyAccountLabel = new System.Windows.Forms.Label();
             this.feildClearLabel = new System.Windows.Forms.Label();
             this.SIngUpImgBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PasswordLine = new System.Windows.Forms.PictureBox();
-            this.PassWordBox = new System.Windows.Forms.TextBox();
+            this.PassWord = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.UserIdLine = new System.Windows.Forms.PictureBox();
-            this.UserIdBox = new System.Windows.Forms.TextBox();
+            this.UserId = new System.Windows.Forms.TextBox();
             this.exitBtn = new System.Windows.Forms.PictureBox();
             this.SingUpLabel = new System.Windows.Forms.Label();
             this.titleBar = new System.Windows.Forms.PictureBox();
@@ -61,20 +61,20 @@
             // mainPnnel
             // 
             this.mainPnnel.BackColor = System.Drawing.Color.White;
+            this.mainPnnel.Controls.Add(this.LostPass);
             this.mainPnnel.Controls.Add(this.pictureBox2);
             this.mainPnnel.Controls.Add(this.pictureBox4);
-            this.mainPnnel.Controls.Add(this.ConformPassBox1);
-            this.mainPnnel.Controls.Add(this.label6);
+            this.mainPnnel.Controls.Add(this.ConformPass);
             this.mainPnnel.Controls.Add(this.forgetPassLable);
             this.mainPnnel.Controls.Add(this.AlreadyAccountLabel);
             this.mainPnnel.Controls.Add(this.feildClearLabel);
             this.mainPnnel.Controls.Add(this.SIngUpImgBtn);
             this.mainPnnel.Controls.Add(this.pictureBox1);
             this.mainPnnel.Controls.Add(this.PasswordLine);
-            this.mainPnnel.Controls.Add(this.PassWordBox);
+            this.mainPnnel.Controls.Add(this.PassWord);
             this.mainPnnel.Controls.Add(this.pictureBox3);
             this.mainPnnel.Controls.Add(this.UserIdLine);
-            this.mainPnnel.Controls.Add(this.UserIdBox);
+            this.mainPnnel.Controls.Add(this.UserId);
             this.mainPnnel.Controls.Add(this.exitBtn);
             this.mainPnnel.Controls.Add(this.SingUpLabel);
             this.mainPnnel.Controls.Add(this.titleBar);
@@ -84,6 +84,19 @@
             this.mainPnnel.Name = "mainPnnel";
             this.mainPnnel.Size = new System.Drawing.Size(360, 454);
             this.mainPnnel.TabIndex = 1;
+            // 
+            // LostPass
+            // 
+            this.LostPass.AutoSize = true;
+            this.LostPass.Font = new System.Drawing.Font("Arial", 10F);
+            this.LostPass.Location = new System.Drawing.Point(92, 417);
+            this.LostPass.Name = "LostPass";
+            this.LostPass.Size = new System.Drawing.Size(182, 19);
+            this.LostPass.TabIndex = 34;
+            this.LostPass.Text = "Lost Password Key Add";
+            this.LostPass.Click += new System.EventHandler(this.LostPass_Click);
+            this.LostPass.MouseEnter += new System.EventHandler(this.LostPass_MouseEnter);
+            this.LostPass.MouseLeave += new System.EventHandler(this.LostPass_MouseLeave);
             // 
             // pictureBox2
             // 
@@ -104,27 +117,18 @@
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
             // 
-            // ConformPassBox1
+            // ConformPass
             // 
-            this.ConformPassBox1.BackColor = System.Drawing.Color.White;
-            this.ConformPassBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ConformPassBox1.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConformPassBox1.Location = new System.Drawing.Point(74, 280);
-            this.ConformPassBox1.MaxLength = 20;
-            this.ConformPassBox1.Multiline = true;
-            this.ConformPassBox1.Name = "ConformPassBox1";
-            this.ConformPassBox1.PasswordChar = '*';
-            this.ConformPassBox1.Size = new System.Drawing.Size(249, 30);
-            this.ConformPassBox1.TabIndex = 31;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(301, 58);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 17);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "skip";
+            this.ConformPass.BackColor = System.Drawing.Color.White;
+            this.ConformPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ConformPass.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConformPass.Location = new System.Drawing.Point(74, 280);
+            this.ConformPass.MaxLength = 20;
+            this.ConformPass.Multiline = true;
+            this.ConformPass.Name = "ConformPass";
+            this.ConformPass.PasswordChar = '*';
+            this.ConformPass.Size = new System.Drawing.Size(249, 30);
+            this.ConformPass.TabIndex = 31;
             // 
             // forgetPassLable
             // 
@@ -145,6 +149,8 @@
             this.AlreadyAccountLabel.TabIndex = 28;
             this.AlreadyAccountLabel.Text = "Alrady Register";
             this.AlreadyAccountLabel.Click += new System.EventHandler(this.AlreadyAccountLabel_Click);
+            this.AlreadyAccountLabel.MouseEnter += new System.EventHandler(this.AlreadyAccountLabel_MouseEnter);
+            this.AlreadyAccountLabel.MouseLeave += new System.EventHandler(this.AlreadyAccountLabel_MouseLeave);
             // 
             // feildClearLabel
             // 
@@ -155,16 +161,20 @@
             this.feildClearLabel.Size = new System.Drawing.Size(88, 19);
             this.feildClearLabel.TabIndex = 27;
             this.feildClearLabel.Text = "Clear Feild";
+            this.feildClearLabel.Click += new System.EventHandler(this.feildClearLabel_Click);
+            this.feildClearLabel.MouseEnter += new System.EventHandler(this.feildClearLabel_MouseEnter);
+            this.feildClearLabel.MouseLeave += new System.EventHandler(this.feildClearLabel_MouseLeave);
             // 
             // SIngUpImgBtn
             // 
             this.SIngUpImgBtn.Image = global::Cab_management_system.cs.Properties.Resources.pngegg__7_;
-            this.SIngUpImgBtn.Location = new System.Drawing.Point(149, 366);
+            this.SIngUpImgBtn.Location = new System.Drawing.Point(150, 354);
             this.SIngUpImgBtn.Name = "SIngUpImgBtn";
             this.SIngUpImgBtn.Size = new System.Drawing.Size(65, 53);
             this.SIngUpImgBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SIngUpImgBtn.TabIndex = 26;
             this.SIngUpImgBtn.TabStop = false;
+            this.SIngUpImgBtn.Click += new System.EventHandler(this.SIngUpImgBtn_Click);
             // 
             // pictureBox1
             // 
@@ -185,18 +195,18 @@
             this.PasswordLine.TabIndex = 24;
             this.PasswordLine.TabStop = false;
             // 
-            // PassWordBox
+            // PassWord
             // 
-            this.PassWordBox.BackColor = System.Drawing.Color.White;
-            this.PassWordBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PassWordBox.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassWordBox.Location = new System.Drawing.Point(74, 204);
-            this.PassWordBox.MaxLength = 20;
-            this.PassWordBox.Multiline = true;
-            this.PassWordBox.Name = "PassWordBox";
-            this.PassWordBox.PasswordChar = '*';
-            this.PassWordBox.Size = new System.Drawing.Size(249, 30);
-            this.PassWordBox.TabIndex = 23;
+            this.PassWord.BackColor = System.Drawing.Color.White;
+            this.PassWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PassWord.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassWord.Location = new System.Drawing.Point(74, 204);
+            this.PassWord.MaxLength = 20;
+            this.PassWord.Multiline = true;
+            this.PassWord.Name = "PassWord";
+            this.PassWord.PasswordChar = '*';
+            this.PassWord.Size = new System.Drawing.Size(249, 30);
+            this.PassWord.TabIndex = 23;
             // 
             // pictureBox3
             // 
@@ -217,16 +227,16 @@
             this.UserIdLine.TabIndex = 21;
             this.UserIdLine.TabStop = false;
             // 
-            // UserIdBox
+            // UserId
             // 
-            this.UserIdBox.BackColor = System.Drawing.Color.White;
-            this.UserIdBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserIdBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.UserIdBox.Location = new System.Drawing.Point(74, 129);
-            this.UserIdBox.Multiline = true;
-            this.UserIdBox.Name = "UserIdBox";
-            this.UserIdBox.Size = new System.Drawing.Size(249, 30);
-            this.UserIdBox.TabIndex = 20;
+            this.UserId.BackColor = System.Drawing.Color.White;
+            this.UserId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UserId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.UserId.Location = new System.Drawing.Point(74, 129);
+            this.UserId.Multiline = true;
+            this.UserId.Name = "UserId";
+            this.UserId.Size = new System.Drawing.Size(249, 30);
+            this.UserId.TabIndex = 20;
             // 
             // exitBtn
             // 
@@ -286,22 +296,22 @@
         #endregion
 
         private System.Windows.Forms.Panel mainPnnel;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label forgetPassLable;
         private System.Windows.Forms.Label AlreadyAccountLabel;
         private System.Windows.Forms.Label feildClearLabel;
         private System.Windows.Forms.PictureBox SIngUpImgBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox PasswordLine;
-        private System.Windows.Forms.TextBox PassWordBox;
+        private System.Windows.Forms.TextBox PassWord;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox UserIdLine;
-        private System.Windows.Forms.TextBox UserIdBox;
+        private System.Windows.Forms.TextBox UserId;
         private System.Windows.Forms.PictureBox exitBtn;
         private System.Windows.Forms.Label SingUpLabel;
         private System.Windows.Forms.PictureBox titleBar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox ConformPassBox1;
+        private System.Windows.Forms.TextBox ConformPass;
+        private System.Windows.Forms.Label LostPass;
     }
 }
