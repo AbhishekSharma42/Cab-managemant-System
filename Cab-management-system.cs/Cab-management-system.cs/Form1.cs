@@ -35,83 +35,7 @@ namespace Cab_management_system.cs
             Application.Exit();
         }
 
-        private void registerLabel_MouseEnter(object sender, EventArgs e)
-        {
-            registerLabel.ForeColor = Color.Blue;
-        }
-
-        private void registerLabel_MouseLeave(object sender, EventArgs e)
-        {
-            registerLabel.ForeColor = Color.Black;
-        }
-
-        private void feildClearLabel_MouseEnter(object sender, EventArgs e)
-        {
-            feildClearLabel.ForeColor = Color.Red;
-        }
-
-        private void feildClearLabel_MouseLeave(object sender, EventArgs e)
-        {
-            feildClearLabel.ForeColor = Color.Black;
-        }
-
-        private void forgetPassLable_MouseEnter(object sender, EventArgs e)
-        {
-            forgetPassLable.ForeColor = Color.Blue;
-        }
-
-        private void forgetPassLable_MouseLeave(object sender, EventArgs e)
-        {
-            if (DarkModeBtn.CheckState == 0)
-            {
-                forgetPassLable.ForeColor = Color.Black;
-            }
-            else {
-                forgetPassLable.ForeColor = Color.White;
-            }
-            
-        }
-           
-        
        
-        private void DarkModeBtn_CheckedChanged(object sender, EventArgs e)
-        {
-            if (DarkModeBtn.CheckState == 0)
-            {
-                mainPnnel.BackColor = Color.White;
-                LoginLabel.ForeColor = Color.Black;
-                registerLabel.ForeColor = Color.Black;
-                feildClearLabel.ForeColor = Color.Black;
-                forgetPassLable.ForeColor = Color.Black;
-               
-                UserIdBox.BackColor = Color.White;
-                UserIdBox.ForeColor = Color.Black;
-                UserIdLine.BackColor = Color.Black;
-
-                PassWordBox.BackColor = Color.White;
-                PassWordBox.ForeColor = Color.Black;
-                PasswordLine.BackColor = Color.Black;
-            }
-            
-            else
-            {
-                mainPnnel.BackColor = Color.FromArgb(2, 6, 40);
-                LoginLabel.ForeColor = Color.White;
-                registerLabel.ForeColor = Color.White;
-                feildClearLabel.ForeColor = Color.White;
-                forgetPassLable.ForeColor = Color.White;
-                
-                UserIdBox.BackColor = Color.FromArgb(2, 6, 40);
-                UserIdBox.ForeColor = Color.White;
-                UserIdLine.BackColor = Color.Red;
-
-                PassWordBox.BackColor = Color.FromArgb(2, 6, 40);
-                PassWordBox.ForeColor = Color.White;
-                PasswordLine.BackColor = Color.Red;
-            }
-        }
-
-
         private void registerLabel_Click_1(object sender, EventArgs e)
         {
             new SingUp().Show();
@@ -128,8 +52,44 @@ namespace Cab_management_system.cs
         {
             UserIdBox.Clear();
             PassWordBox.Clear();
+            UserIdBox.Focus();
+            PassWordBox_Leave(sender, e);
         }
 
+        private void UserIdBox_Enter(object sender, EventArgs e)
+        {
+            if(UserIdBox.Text == "Example@semple.com")
+            {
+                UserIdBox.Text = "";
+                UserIdBox.ForeColor = Color.White;
+            }
+        }
 
+        private void UserIdBox_Leave(object sender, EventArgs e)
+        {
+            if(UserIdBox.Text == "")
+            {
+                UserIdBox.Text = "Example@semple.com";
+                UserIdBox.ForeColor = Color.Gray;
+            }
+        }
+
+        private void PassWordBox_Enter(object sender, EventArgs e)
+        {
+            if(PassWordBox.Text == "password")
+            {
+                PassWordBox.Text = "";
+                PassWordBox.ForeColor = Color.White;
+            }
+        }
+
+        private void PassWordBox_Leave(object sender, EventArgs e)
+        {
+            if (PassWordBox.Text == "")
+            {
+                PassWordBox.Text = "password";
+                PassWordBox.ForeColor = Color.Gray;
+            }
+        }
     }
 }

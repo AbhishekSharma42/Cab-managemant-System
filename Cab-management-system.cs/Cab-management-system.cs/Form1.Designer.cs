@@ -42,7 +42,7 @@
             this.exitBtn = new System.Windows.Forms.PictureBox();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.titleBar = new System.Windows.Forms.PictureBox();
-            this.DarkModeBtn = new System.Windows.Forms.CheckBox();
+            this.Remember_Me = new System.Windows.Forms.CheckBox();
             this.mainPnnel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoginBtnimg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +55,7 @@
             // 
             // mainPnnel
             // 
-            this.mainPnnel.BackColor = System.Drawing.Color.White;
+            this.mainPnnel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(6)))), ((int)(((byte)(40)))));
             this.mainPnnel.Controls.Add(this.forgetPassLable);
             this.mainPnnel.Controls.Add(this.registerLabel);
             this.mainPnnel.Controls.Add(this.feildClearLabel);
@@ -69,8 +69,9 @@
             this.mainPnnel.Controls.Add(this.exitBtn);
             this.mainPnnel.Controls.Add(this.LoginLabel);
             this.mainPnnel.Controls.Add(this.titleBar);
-            this.mainPnnel.Controls.Add(this.DarkModeBtn);
+            this.mainPnnel.Controls.Add(this.Remember_Me);
             this.mainPnnel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPnnel.ForeColor = System.Drawing.Color.White;
             this.mainPnnel.Location = new System.Drawing.Point(0, 0);
             this.mainPnnel.Name = "mainPnnel";
             this.mainPnnel.Size = new System.Drawing.Size(358, 433);
@@ -80,44 +81,41 @@
             // 
             this.forgetPassLable.AutoSize = true;
             this.forgetPassLable.Font = new System.Drawing.Font("Arial", 10.2F);
-            this.forgetPassLable.Location = new System.Drawing.Point(112, 352);
+            this.forgetPassLable.ForeColor = System.Drawing.Color.White;
+            this.forgetPassLable.Location = new System.Drawing.Point(105, 372);
             this.forgetPassLable.Name = "forgetPassLable";
             this.forgetPassLable.Size = new System.Drawing.Size(132, 19);
             this.forgetPassLable.TabIndex = 29;
             this.forgetPassLable.Text = "Forget Password";
-            this.forgetPassLable.MouseEnter += new System.EventHandler(this.forgetPassLable_MouseEnter);
-            this.forgetPassLable.MouseLeave += new System.EventHandler(this.forgetPassLable_MouseLeave);
             // 
             // registerLabel
             // 
             this.registerLabel.AutoSize = true;
             this.registerLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerLabel.ForeColor = System.Drawing.Color.White;
             this.registerLabel.Location = new System.Drawing.Point(28, 246);
             this.registerLabel.Name = "registerLabel";
             this.registerLabel.Size = new System.Drawing.Size(69, 19);
             this.registerLabel.TabIndex = 28;
             this.registerLabel.Text = "Register";
             this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click_1);
-            this.registerLabel.MouseEnter += new System.EventHandler(this.registerLabel_MouseEnter);
-            this.registerLabel.MouseLeave += new System.EventHandler(this.registerLabel_MouseLeave);
             // 
             // feildClearLabel
             // 
             this.feildClearLabel.AutoSize = true;
             this.feildClearLabel.Font = new System.Drawing.Font("Arial", 10.2F);
+            this.feildClearLabel.ForeColor = System.Drawing.Color.White;
             this.feildClearLabel.Location = new System.Drawing.Point(242, 247);
             this.feildClearLabel.Name = "feildClearLabel";
             this.feildClearLabel.Size = new System.Drawing.Size(88, 19);
             this.feildClearLabel.TabIndex = 27;
             this.feildClearLabel.Text = "Clear Feild";
             this.feildClearLabel.Click += new System.EventHandler(this.feildClearLabel_Click);
-            this.feildClearLabel.MouseEnter += new System.EventHandler(this.feildClearLabel_MouseEnter);
-            this.feildClearLabel.MouseLeave += new System.EventHandler(this.feildClearLabel_MouseLeave);
             // 
             // LoginBtnimg
             // 
             this.LoginBtnimg.Image = global::Cab_management_system.cs.Properties.Resources.pngegg__7_;
-            this.LoginBtnimg.Location = new System.Drawing.Point(148, 279);
+            this.LoginBtnimg.Location = new System.Drawing.Point(143, 299);
             this.LoginBtnimg.Name = "LoginBtnimg";
             this.LoginBtnimg.Size = new System.Drawing.Size(65, 53);
             this.LoginBtnimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,7 +135,7 @@
             // 
             // PasswordLine
             // 
-            this.PasswordLine.BackColor = System.Drawing.Color.Black;
+            this.PasswordLine.BackColor = System.Drawing.Color.Red;
             this.PasswordLine.Location = new System.Drawing.Point(28, 237);
             this.PasswordLine.Name = "PasswordLine";
             this.PasswordLine.Size = new System.Drawing.Size(300, 3);
@@ -146,16 +144,20 @@
             // 
             // PassWordBox
             // 
-            this.PassWordBox.BackColor = System.Drawing.Color.White;
+            this.PassWordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(6)))), ((int)(((byte)(40)))));
             this.PassWordBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PassWordBox.Font = new System.Drawing.Font("Arial Black", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassWordBox.Location = new System.Drawing.Point(74, 204);
+            this.PassWordBox.ForeColor = System.Drawing.Color.Gray;
+            this.PassWordBox.Location = new System.Drawing.Point(75, 207);
             this.PassWordBox.MaxLength = 20;
             this.PassWordBox.Multiline = true;
             this.PassWordBox.Name = "PassWordBox";
             this.PassWordBox.PasswordChar = '*';
-            this.PassWordBox.Size = new System.Drawing.Size(249, 30);
+            this.PassWordBox.Size = new System.Drawing.Size(249, 27);
             this.PassWordBox.TabIndex = 23;
+            this.PassWordBox.Text = "password";
+            this.PassWordBox.Enter += new System.EventHandler(this.PassWordBox_Enter);
+            this.PassWordBox.Leave += new System.EventHandler(this.PassWordBox_Leave);
             // 
             // pictureBox3
             // 
@@ -169,7 +171,7 @@
             // 
             // UserIdLine
             // 
-            this.UserIdLine.BackColor = System.Drawing.Color.Black;
+            this.UserIdLine.BackColor = System.Drawing.Color.Red;
             this.UserIdLine.Location = new System.Drawing.Point(28, 163);
             this.UserIdLine.Name = "UserIdLine";
             this.UserIdLine.Size = new System.Drawing.Size(300, 3);
@@ -178,14 +180,18 @@
             // 
             // UserIdBox
             // 
-            this.UserIdBox.BackColor = System.Drawing.Color.White;
+            this.UserIdBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(6)))), ((int)(((byte)(40)))));
             this.UserIdBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserIdBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.UserIdBox.Location = new System.Drawing.Point(74, 129);
+            this.UserIdBox.ForeColor = System.Drawing.Color.Gray;
+            this.UserIdBox.Location = new System.Drawing.Point(74, 131);
             this.UserIdBox.Multiline = true;
             this.UserIdBox.Name = "UserIdBox";
             this.UserIdBox.Size = new System.Drawing.Size(249, 30);
             this.UserIdBox.TabIndex = 20;
+            this.UserIdBox.Text = "Example@semple.com";
+            this.UserIdBox.Enter += new System.EventHandler(this.UserIdBox_Enter);
+            this.UserIdBox.Leave += new System.EventHandler(this.UserIdBox_Leave);
             // 
             // exitBtn
             // 
@@ -203,6 +209,7 @@
             this.LoginLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.LoginLabel.AutoSize = true;
             this.LoginLabel.Font = new System.Drawing.Font("Buxton Sketch", 18.8F, System.Drawing.FontStyle.Bold);
+            this.LoginLabel.ForeColor = System.Drawing.Color.White;
             this.LoginLabel.Location = new System.Drawing.Point(138, 64);
             this.LoginLabel.Name = "LoginLabel";
             this.LoginLabel.Size = new System.Drawing.Size(83, 39);
@@ -211,6 +218,7 @@
             // 
             // titleBar
             // 
+            this.titleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(6)))), ((int)(((byte)(40)))));
             this.titleBar.Location = new System.Drawing.Point(1, 0);
             this.titleBar.Name = "titleBar";
             this.titleBar.Size = new System.Drawing.Size(357, 51);
@@ -218,16 +226,17 @@
             this.titleBar.TabStop = false;
             this.titleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.titleBar_MouseDown);
             // 
-            // DarkModeBtn
+            // Remember_Me
             // 
-            this.DarkModeBtn.AutoSize = true;
-            this.DarkModeBtn.Location = new System.Drawing.Point(12, 407);
-            this.DarkModeBtn.Name = "DarkModeBtn";
-            this.DarkModeBtn.Size = new System.Drawing.Size(99, 21);
-            this.DarkModeBtn.TabIndex = 16;
-            this.DarkModeBtn.Text = "Dark Mode";
-            this.DarkModeBtn.UseVisualStyleBackColor = true;
-            this.DarkModeBtn.CheckedChanged += new System.EventHandler(this.DarkModeBtn_CheckedChanged);
+            this.Remember_Me.AutoSize = true;
+            this.Remember_Me.Font = new System.Drawing.Font("MS Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Remember_Me.ForeColor = System.Drawing.Color.White;
+            this.Remember_Me.Location = new System.Drawing.Point(30, 272);
+            this.Remember_Me.Name = "Remember_Me";
+            this.Remember_Me.Size = new System.Drawing.Size(102, 21);
+            this.Remember_Me.TabIndex = 16;
+            this.Remember_Me.Text = "Remember";
+            this.Remember_Me.UseVisualStyleBackColor = true;
             // 
             // LogInWindow
             // 
@@ -267,8 +276,7 @@
         private System.Windows.Forms.PictureBox exitBtn;
         private System.Windows.Forms.Label LoginLabel;
         private System.Windows.Forms.PictureBox titleBar;
-        private System.Windows.Forms.CheckBox DarkModeBtn;
-
+        private System.Windows.Forms.CheckBox Remember_Me;
     }
 }
 
